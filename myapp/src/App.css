@@ -1,3 +1,38 @@
+div {
+  box-sizing: border-box;
+}
+
 .Centered {
   text-align: center;
 }
+
+.myList {
+  padding: 10px;
+}
+
+#topDiv {
+  border: 2px solid pink;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  align-self: center;
+}
+
+.pink {
+  background-color: pink;
+}
+
+#hoverDiv {
+  height: 50px;
+  padding: 10px;
+  background-color: greenyellow;
+}
+
+#hoverDiv:hover {
+  cursor:pointer;
+ }
+
+ #namechange {
+  cursor:pointer;
+ }

@@ -5,6 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+// reactDOM.render takes a JSX expression and creates a corresponding tree of 
+// DOM nodes, and adds that tree to the DOM.
+// root is the "container element" where the nodes will be appended.
 root.render(
   <React.StrictMode>
     <App />
