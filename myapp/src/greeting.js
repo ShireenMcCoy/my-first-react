@@ -16,7 +16,7 @@ class Greeting extends React.Component{
     // don't update state from inside the render function OR from
     // inside the constructor.
     updateState(){
-        if(this.state.name == 'Biznatch'){
+        if(this.state.name === 'Biznatch'){
             this.setState({name: "Boo"})
             // setState takes 2 arguments: an object showing what parts of the
             //state have changed, and a callback. You basically never need the callback.

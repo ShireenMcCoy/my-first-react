@@ -2,6 +2,9 @@ import './App.css';
 import PoemComponent from './myModule.js';
 import MyEventHandler from './MyEventHandler.js';
 import Greeting from './greeting.js';
+import MyFunctionComponent from './FunctionComponent.js';
+import ColorPicker from './ColorPicker.js';
+import PizzaOrder from './PizzaOrderDos.js';
 
 /* This following function ("App") is a React "component". Comonents return something
 describing what should appear on the screen.
@@ -13,7 +16,6 @@ function App() {
   return (
     <div id="topDiv">
       <div className="Centered">
-
         {/* by giving the Greeting component a "name" attribute, the value of "name"
         gets passed to the Greeting component as part of the "props" object. 
         It can be accessed from inside the comonent as "this.props.name" */}
@@ -25,11 +27,16 @@ function App() {
           The component class name must be uppercase so React knows this is a 
           component instance, not just a regular HTML tag. */}
           < MyEventHandler />
+
+          <MyFunctionComponent name="buddy"/>
       
       </div>
+
       <div className="myList">
         <ul>{GroceryList}</ul>
       </div>
+      < PizzaOrder />
+      {/* <ColorPicker /> */}
      
     </div>
   );
